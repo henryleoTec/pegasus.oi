@@ -1,0 +1,386 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.main-header {
+  background-color: #222222;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  -webkit-box-shadow: 10px 10px 20px rgba(44, 44, 44, 0.4);
+          box-shadow: 10px 10px 20px rgba(44, 44, 44, 0.4);
+  z-index: 999;
+}
+
+.main-header .logo img {
+  width: 57px;
+}
+
+.main-header .head-nav {
+  position: relative;
+  left: 30%;
+}
+
+.main-header .head-nav .nav-item {
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.main-header .head-nav .nav-item a:hover {
+  color: #14bb14;
+}
+
+.hold-us {
+  padding: 10px;
+}
+
+.hold-us .head-nav .nav-item a {
+  color: #222222;
+  font-weight: 600;
+  position: relative;
+  left: 0;
+}
+
+.hold-us img {
+  width: 70px;
+  height: 70px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hold-us img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.hold-us .h4 {
+  font-weight: 600;
+}
+
+.hold-us p {
+  font-size: 14px;
+  font-weight: 600;
+  color: gray;
+}
+
+.sec1 {
+  position: relative;
+  width: 100%;
+  height: 554px;
+  background-color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sec1 .h1 {
+  font-weight: 600;
+  color: #e6e6e6;
+  margin-top: 100px;
+  font-size: 50px;
+}
+
+.sec1 p {
+  color: #a0a0a0;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.sec1 button {
+  padding: 12px;
+  border: none;
+  font-weight: 600;
+  background-color: rgba(18, 177, 13, 0.3);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.sec1 button a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+
+.sec1 button:hover {
+  background-color: rgba(18, 177, 13, 0.7);
+}
+
+.sec2 {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.sec2 .overlay-box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 560px;
+}
+
+.sec2 .overlay-box img {
+  width: 100%;
+  height: 560px;
+  overflow-x: hidden;
+}
+
+.sec2 .overlay {
+  width: 100%;
+  height: 560px;
+  position: relative;
+  background-color: rgba(45, 81, 199, 0.4);
+}
+
+.sec2 .overlay a {
+  width: 100%;
+  height: 560px;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.sec2 .overlay a .h2 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.sec2 .overlay a:hover {
+  background-color: rgba(0, 143, 0, 0.7);
+}
+
+.footer {
+  padding: 20px;
+  background-color: #222222;
+}
+
+.footer .foot1 .h3 {
+  color: #c9c9c9;
+  font-weight: 600;
+}
+
+.footer .foot1 p {
+  color: #a8a8a8;
+}
+
+.footer .foot1 p i {
+  font-size: 20px;
+}
+
+.footer .foot2 {
+  width: 100%;
+}
+
+.footer .foot2 p {
+  color: gray;
+}
+
+.footer .foot2 .head-nav .nav-item a {
+  color: #1aaf1a;
+  font-weight: 600;
+}
+
+.hold-soc {
+  margin-left: 50px;
+  margin-top: -10px;
+}
+
+.hold-soc .nav-item a i {
+  font-size: 25px;
+}
+
+.achieve {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.achieve .our-sol {
+  background-color: #222222;
+}
+
+.achieve .our-sol .h1 {
+  color: #d6d6d6;
+  font-weight: 700;
+}
+
+.main-body {
+  /*.accord{
+            width:50%;
+        }*/
+}
+
+.main-body img {
+  width: 430px;
+  height: 500px;
+}
+
+.main-body .h2 {
+  font-weight: 700;
+}
+
+.main-body p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+.main-body .h3 {
+  font-weight: 650;
+}
+
+.main-body label {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.main-body a {
+  text-decoration: none;
+  color: #272727;
+}
+
+.main-body .the-card {
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.3);
+          box-shadow: 10px 10px 20px rgba(170, 170, 170, 0.3);
+  background-color: #fafafa;
+}
+
+.main-body .the-card .img-card {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.main-body .the-card .img-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.main-body .card {
+  border: none;
+  padding: 15px;
+  position: relative;
+}
+
+.main-body .card .card-img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  left: calc(50% - 75px);
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 10px rgba(145, 145, 145, 0.3), -5px -5px 10px rgba(197, 197, 197, 0.3);
+          box-shadow: 5px 5px 10px rgba(145, 145, 145, 0.3), -5px -5px 10px rgba(197, 197, 197, 0.3);
+}
+
+.main-body .card .card-img img {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  left: calc(50% - 45%);
+  top: calc(50% - 45%);
+}
+
+.green {
+  color: #14bb14;
+}
+
+@media screen and (max-width: 990px) {
+  .hold-soc .nav-item a {
+    padding: 20px;
+  }
+  .hold-soc .nav-item a i {
+    font-size: 25px;
+  }
+  .main-header .head-nav {
+    left: 0;
+  }
+  .main-header .head-nav .nav-item {
+    margin-left: 0;
+  }
+  .sec1 {
+    height: 600px;
+    padding: 15px;
+  }
+  .sec1 .h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .sec2 .overlay {
+    height: 1680px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-body img {
+    width: 100%;
+    height: 400px;
+  }
+  .hold-soc .nav-item a {
+    padding: 2opx;
+  }
+  .hold-soc .nav-item a i {
+    font-size: 25px;
+  }
+  .main-header .head-nav {
+    left: 0;
+  }
+  .main-header .head-nav .nav-item {
+    margin-left: 0;
+  }
+  .sec1 {
+    height: 600px;
+    padding: 15px;
+  }
+  .sec1 .h1 {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .sec2 .overlay {
+    height: 1680px;
+  }
+}
+
+#to-top {
+  text-decoration: none;
+  color: white;
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+
+#to-top .to-top {
+  width: 40px;
+  height: 60px;
+  background-color: #222222;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#to-top .to-top i {
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+#to-top .to-top p {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.rg button {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=index.css.map */

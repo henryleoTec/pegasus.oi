@@ -1,0 +1,727 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+$bg: rgb(37, 37, 37);
+$color:rgb(23, 187, 23);
+
+
+body{
+    width:100vw;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.the-box{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    top:0;
+img{
+    width:300px;
+    height:300px;
+    position: absolute;
+    &:nth-child(2){
+right:20px;
+top:30px;
+    }
+    &:nth-child(3){
+        left:500px;
+        bottom:0;
+            }
+}
+}
+
+
+.logo img {
+    width: 57px;
+}
+
+/*admin login styling */
+.overlay{
+    width:100%;
+    position: relative;
+    height: 100%;
+    background-color: rgba(219, 255, 219, 0.3);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+
+    .login-box{
+        position: relative;
+        width:400px;
+        height:500px ;
+        background-color: #fff;
+        box-shadow:10px 10px 20px rgba(161, 161, 161,0.2) ;
+        overflow: hidden;
+        padding:20px;
+        font-family: Verdana;
+
+        form{
+            input{
+                width:100%;
+                padding:13px;
+                margin-top: 20px;
+                border:none;
+                background-color: rgb(229, 255, 225);
+                border-radius: 7px;
+                outline:none;
+                font-size:14px;
+                font-weight: 550;
+            }
+            button{
+                margin-top:25px;
+                width:150px;
+                position:relative;
+                float:right;
+                border:none;
+                padding:10px;
+                outline:none;
+                transition: 0.3s;
+                background-color: rgb(39, 39, 39);
+                border-radius: 5px;
+                color:white;
+                font-weight: 600;
+                font-size:14px;
+                &:hover{
+                    background-color: rgb(42, 216, 100);
+                }
+            }
+        }
+
+        .c1{
+            width:200px;
+            height: 200px;
+            background-color: rgb(42, 216, 100);
+            position: absolute;
+            border-radius: 50px;
+            transform:rotate(42deg);
+            right:-100px;
+            top:-60px;
+            z-index: 1;
+        }
+           .c2{
+                content:"";
+                width:200px;
+                height: 200px;
+                background-color: rgb(39, 39, 39);
+                position: absolute;
+                border-radius: 50px;
+                transform:rotate(42deg);
+                bottom:-50px;
+                left:-100px;
+                z-index: 1;
+            }
+            .hold{
+                z-index:999;
+                margin-top:80px;
+
+            .h3{
+                font-weight: 700;
+                color:green;
+                span{
+                    color:rgb(43, 43, 43);
+                }
+            }
+            }
+         
+        }
+        }
+    
+
+/*admin login styling ends here*/
+
+
+//dashboard styling
+
+.myrow{
+    width: 100%;
+    height: 100%;
+
+    .col1{
+        position: fixed;
+        top:0;
+        width:21%;
+        height: 100%;
+        background-color: rgb(37, 37, 37);
+
+        .header{
+            background-color: rgb(138, 138, 138);
+            padding:15px 15px 18px 15px;
+            color:white;
+            display: flex;
+            .h5{
+                font-weight: 600;
+                margin-top: 10px;
+            }
+        }
+
+        .list{
+            width:100%;
+            position: relative;
+            a{
+                width:100%;
+                position: relative;
+                text-decoration:none;
+                color:rgb(233, 233, 233);
+                padding:15px;
+                font-weight: 600;
+                transition: 0.3s;
+                i{
+                    font-size:20px;
+                }
+                &:hover{
+                    border-left:3px solid rgb(19, 189, 19);
+                    background-color: rgb(97, 97, 97);
+                }
+                .act{
+                    border-left:3px solid rgb(19, 189, 19);
+                    background-color: rgb(97, 97, 97);
+                }
+                .car{
+                    position: absolute;
+                    right:20px;
+                }
+            }
+        }
+    }
+
+
+
+    .col2{
+        position:relative;
+        margin-left: 21%;
+ width:79%;
+ height:100%;
+ .header{
+     position: sticky;
+     top:0;
+    background-color: rgb(37, 37, 37);
+    z-index: 1;
+ }
+    }
+}
+
+.btn-user{
+    float: right;
+    color:white;
+i{
+    font-size:20px;
+}
+    &:hover{
+        color:#fff;
+    }
+}
+
+.add-box{
+ position: relative;
+    width:100%;
+    height: 500px;
+    padding:10px;
+    overflow-y:auto;
+   
+    .add-boxs{
+        position: relative;
+        width:100%;
+        left:calc(50% - 50%);
+        background-color: white;
+        box-shadow: 10px 10px 20px rgba(161, 161, 161,0.2);
+        form{
+
+      
+        .h4{
+            font-weight: 700;
+            span{
+                color:rgb(7, 145, 7);
+            }
+        }
+
+        section{
+            position: relative;
+            input{
+                width:100%;
+                padding:10px;
+                margin-top:15px;
+                border:2px solid rgb(204, 255, 204);
+                border-radius: 5px;
+                outline-color: rgb(99, 255, 60);
+                position: relative;
+            }
+            select{
+                width:100%;
+                padding:10px;
+                margin-top:15px;
+                border:2px solid rgb(204, 255, 204);
+                border-radius: 5px;
+                outline-color: rgb(99, 255, 60);
+                position: relative;
+            }
+        
+            label{
+                font-size:13px;
+                font-weight: 500;
+                margin-top:10px;
+                color:rgb(80, 80, 80);
+                position: relative;
+                top:7px;
+            }
+            .btn-next{
+                border:none;
+                position:relative;
+                width:40%;
+                margin-top:20px;
+                float:right;
+                background-color: rgb(98, 255, 98);
+                color:white;
+                text-align: center;
+                padding:12px;
+                font-weight: bold;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+                &:hover{
+                    background-color: rgb(20, 211, 20);
+                }
+            }
+        }
+        
+    }
+}
+}
+
+.footer{
+    width:100%;
+    position: fixed;
+    bottom:0;
+    color:gray;
+    font-size:14px;
+    text-align: center;
+    p{
+        position: relative;
+        width:79%;
+
+    }
+}
+
+//dashboard styling ends here
+
+
+.err-box{
+    position:fixed;
+    z-index: 1;
+    top:40px;
+    width:50%;
+    left:calc(50% - 20%);
+    padding:10px;
+    background-color: rgb(255, 225, 225);
+    align-items: center;
+    border-radius: 10px;
+    display: none;
+    p{
+       margin-top:10px;
+       margin-left:20px;
+    }
+    button{
+        position: absolute;
+        right:20px;
+        border:none;
+        font-size:20px;
+        color:red;
+        background-color: transparent;
+    }
+}
+
+//dash style-------------------
+//registered users styling------------------------\
+.dash-hold{
+    width:100%;
+    height:550px;
+    overflow-x:hidden ;
+    overflow-y: auto;
+
+}
+
+.dash-header{
+    position: relative;
+    .h4{
+        font-weight: 700;
+    }
+    .h6{
+        position: absolute;
+        right:20px;
+    }
+}
+
+.rur{
+    a:hover{
+        transition: 0.3s;
+        .card{
+            background:rgb(37, 37, 37);
+            color:white;
+        }
+    }
+}
+
+.rur{
+    a{
+        text-decoration: none;
+        color:rgb(31, 31, 31);
+        transition: 0.3s;
+        position: relative;
+        .card{
+            padding:15px;
+            position: relative;
+            width:100%;
+            height:150px;
+            background-color:white;
+            box-shadow: 5px 5px 10px rgba(156, 156, 156,0.2),-5px -5px 10px rgba(185, 185, 185, 0.2);
+            i{
+                color:rgb(22, 172, 22);
+            }
+            .h5{
+                font-weight: 700;
+            }
+            p{
+                font-size:20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.admin-pass{
+    .card{
+        height: 220px;
+        padding:10px;
+        border-bottom:1px solid rgb(20, 172, 20);
+        box-shadow: 5px 5px 10px rgba(156, 156, 156,0.2),-5px -5px 10px rgba(185, 185, 185, 0.2);
+        .h5{
+            font-weight: 700;
+        }
+
+        form{
+            font-family: Arial, Helvetica, sans-serif;
+            label{
+                font-weight: 700;
+                font-size:14px;
+                color:rgb(75, 75, 75);
+            }
+            input{
+                padding:7px;
+                width:100%;
+                border:2px solid rgb(212, 243, 212);
+                border-radius: 5px;
+                outline:none;
+                margin-top:5px;
+            }
+        }
+        button{
+            margin-top:20px;
+            width:200px;
+            border:none;
+            background-color: rgb(25, 172, 25);
+            color:white;
+            border-radius: 5px;
+            padding:10px;
+            margin-left:12px;
+            font-weight: 600;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                opacity:0.5;
+            }
+        }
+    }
+}
+
+
+.reg-member{
+    width:100%;
+    height:550px;
+    overflow-x:hidden;
+    overflow-y: auto;
+    padding:15px;
+
+    .the-table{
+        overflow-x: auto;
+        .tb{
+            width:250%;
+        }
+    }
+}
+
+
+
+//help styling -------------------------
+
+.help{
+    transition: 0.3s;
+    width:100%;
+    height:550px;
+    overflow-x:hidden;
+    overflow-y: auto;
+    padding:15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    .subjects{
+        padding:20px;
+        form{
+            label{
+                font-weight: 600;
+            }
+            input,textarea{
+                width:100%;
+                padding:14px;
+                border-radius: 5px;
+                border:2px solid rgb(191, 255, 191);
+                margin-top:5px;
+                outline:none;
+            }
+            button{
+                width:150px;
+                padding:8px;
+                float:right;
+                i{
+                    font-size:20px;
+                }
+            }
+            
+        }
+    }
+}
+
+.float-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    top:50%;
+    right:30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 20px rgba(155, 155, 155,0.3);
+    a{
+        text-decoration: none;
+        color:rgb(46, 46, 46);
+        i{
+            color:rgb(33, 199, 33);
+            font-size:25px;
+        }
+        span{
+            font-size:12px;
+            font-weight: 600;
+        }
+    }
+}
+
+#more{
+    transition: 0.3s;
+    display: none;
+}
+
+//help styliong ends here-----------------
+
+@media screen and (max-width:800px){
+    .reg-member{
+    
+        .the-table{
+            overflow-x: auto;
+            .tb{
+                width:1000%;
+            }
+        }
+    }
+    
+    .admin-pass{
+        padding:15px;
+        .card{
+            height: 320px;
+        }
+        .card2{
+            margin-top:10px;
+            height: 200px;
+        }
+        form{
+            label{
+                margin-top:20px;
+            }
+        }
+    }
+   
+
+     .rur{
+        padding:20px;
+        a{
+            .card{
+                margin-top:20px;
+            }
+        }
+    }
+    .dash-header{
+        padding:15px;
+        .h6{
+            display:none;
+        }
+    }
+    
+}
+
+//acount setting style--------------------------
+
+.user-update{
+    .h5{
+        font-weight: 700;
+    }
+    input{
+        padding:10px;
+        width:100%;
+        border:2px solid rgb(212, 255, 212);
+        border-radius: 4px;
+        margin-top:10px;
+        outline:none;
+    }
+    button{
+        margin-top:10px;
+        float:right;
+        background-color: rgb(51, 51, 51);
+        color:white;
+        font-weight: 600;
+        padding:12px;
+        width:150px;
+        transition: 0.5s ease-in-out;
+        &:hover{
+            color:#fff;
+            opacity:0.6;
+        }
+    }
+    .media{
+        i{
+            font-size:40px;
+        }
+        input{
+            width:90%;
+            margin-left:5%;
+        }
+    }
+}
+//acount setting style-------------------------
+
+
+@media screen and (max-width:800px){
+
+    //accout setting--------
+.user-update{
+    margin-bottom: 50px;
+}
+    //accout set-----------------
+
+    .err-box{
+        top:60px;
+        width:90%;
+        left:calc(50% - 45%);
+    }
+    .overlay{
+        .login-box{
+            width:100%;
+            height:100%;
+
+            .hold{
+                margin-top:150px;
+                .h3{
+                    margin-top:50px
+                }
+            }
+        }
+      
+    }
+
+    //dashboard styling
+.myrow{
+    .col1{
+       display: none;
+       width:70%;
+       z-index: 1;
+    }
+    .col2{
+        width:100%;
+        margin-left:0;
+        .header{
+            position: sticky;
+            top:0;
+        }
+    }
+}
+
+    //dashboard styling ends here
+
+    .bottom-menu{
+        width:100%;
+        position: fixed;
+        bottom:0;
+        background-color:$bg ;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        .ite{
+            margin-left:20px;
+            a{
+                text-decoration:none;
+                color:rgb(197, 197, 197);
+                transition: 0.3s;
+                &:hover{
+                    color:rgb(30, 185, 30);
+                }
+                i{
+                    font-size:25px;
+                }
+                span{
+                    font-size:15px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .add-box{
+        width:100%;
+        .add-boxs{
+            width:100%;
+            left:calc(50% - 50%);
+            form{
+                margin-top:30rem;
+            }
+           
+        }
+    }
+   
+}
+
+@media screen and (max-width:1080px){
+    .list{
+        a{
+            .car{
+                display: none;
+            }
+        }
+    }
+   
+}
+
+
+.error{
+    color:red;
+    font-weight: 600;
+    font-size:13px;
+    position: relative;
+    left:0;
+}
+
+.green{
+    color:rgb(21, 187, 21);
+}
+
+
+

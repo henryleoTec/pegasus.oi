@@ -1,0 +1,16 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+$bg: rgb(37, 37, 37);
+$color:rgb(23, 187, 23);
+
+
+body{
+    width:100vw;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
